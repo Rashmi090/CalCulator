@@ -1,0 +1,82 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "Helvetica Neue", sans-serif;
+	box-sizing: border-box;
+}
+
+/*1st Div*/
+body {
+	background: linear-gradient(to bottom, rgb(245, 245, 245), rgb(128, 0, 128));
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+.container{
+	background: black;
+	padding: 25px;
+	width: 350px;
+	border-radius: 10px;
+}
+
+/*2nd Div*/
+.calc-text{
+	margin-bottom: 20px;
+	padding-left: 5px;
+}
+
+.calc-text p{
+	width: 100%;
+	font-size: 3rem;
+	text-align: end;
+	background: transparent;
+	color: #fff;
+	border:none;
+	outline: none;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+/*3rd div*/
+button{
+	background: #333333;
+	color: #fff;
+	font-size: 1.5rem;
+	border: none;
+	border-radius: 70%;
+	cursor: pointer;
+	height: 65px;
+	weigth: 65px;
+}
+
+button:active,
+button:focus{
+	filter:brightness(120%);
+}
+
+.calc-keys{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-row-gap: 15px;
+	grid-column-gap: 10px;
+}
+
+.key-other{
+	background: #a6a6a6;
+	color: #000000;
+}
+
+.key-zero {
+    width: 100%;
+    color: #000000;
+    grid-column: span 2; /* This makes the "0" button span across 2 columns */
+    border-radius: 10%;
+}
+
+
+.key-operate{
+	background: #ff9501;
+}
+
